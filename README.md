@@ -34,7 +34,7 @@
 
 ## 四、核心代码
 ```Java
-//读取文件名
+//读取文件
  public static synchronized String readFile(String path) throws IOException {
         File f = new File(path);
         if (!f.exists() || !f.isFile()) {
@@ -57,8 +57,8 @@
 ```
 
 ## 五、实验结果
-<img src="作业处理1.png">
-<img src="作业处理2.png">
+<img src="test4/作业处理1.png">
+<img src="test4/作业处理2.png">
 
 ## 六、实验感想
 对字符串有了新的了解，异常处理方面更加深刻。在编写代码处理异常时，对于检查异常，有2种不同的处理方式：使用try...catch...finally语句块处理它。或者，在函数签名中使用throws 声明交给函数调用者caller去解决。对文件的读取写入方法也有所了解了。
